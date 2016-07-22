@@ -1,8 +1,12 @@
 # Fingerprint Scanner Robot
 
-Welcome to the Fingerprint Scanner Robot project! This project is comprised of two robots to test fingerprint scanners. The first robot is the Networked Automated Fingerprint Scanner Test Robot (NAFSTR), and the second is the Networked Automated Rolled Fingerprint Scanner Test Robot (NARFSTR). For more information, check out the documentation  at `Documentation/build/html/index.html` or `Documentation/build/latex/FingerprintScannerRobot.pdf`.
+Welcome to the Fingerprint Scanner Robot project! This project is comprised of two robots to test fingerprint scanners. The first robot is the Networked Automated Fingerprint Scanner Test Robot (NAFSTR), and the second is the Networked Automated Rolled Fingerprint Scanner Test Robot (NARFSTR). Both robots were designed and built at the National Institue of Standards and Technology (NIST) as part of the [Biometric Web Services](http://www.nist.gov/itl/iad/ig/bws.cfm) project. The NAFSTR was designed and built by Jacob Glueck as part of the Summer High School Intern Program (SHIP) over the summer of 2014 and the NARFSTR was designed and built by Jacob Glueck during his time as a  Pathways Intern from October 2014 to July 2015 for the Biometric Web Services project. Kevin Mangold served as Jacob's mentor during both projects.
 
-For a video of the NAFSTR, see: https://www.youtube.com/watch?v=lXbDDAqTphQ
+For more information, check out the documentation  at `Documentation/build/html/index.html` or `Documentation/build/latex/FingerprintScannerRobot.pdf`.
+
+For a video of the NAFSTR, see: https://youtu.be/lXbDDAqTphQ.
+
+For a video of the NARFSTR, see: https://youtu.be/WPvg-6ALE24.
 
 ## Project Contents:
 

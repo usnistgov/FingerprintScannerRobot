@@ -1,0 +1,3 @@
+1. Look at the honeywell force sensors
+2. Look at this fingerprint generator: https://github.com/BTBurke/synfinger
+3. Look into machining the robot; see the .ems file in this directory

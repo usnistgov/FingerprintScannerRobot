@@ -1,0 +1,37 @@
+
+Welcome to Fingerprint Scanner Robot's documentation!
+*****************************************************
+
+* Introduction
+
+* NARFSTR
+
+  * Design
+
+  * Construction
+
+  * Electronics
+
+  * Fingerprints
+
+* NAFSTR
+
+  * Design
+
+  * Construction
+
+  * Electronics
+
+* Program Development
+
+  * Java Robot Control Program
+
+  * C++ Local Control Program
+
+* Using the Robots
+
+  * Communication Protocol
+
+  * Control with "FingerpintRobotControl" Java Program
+
+  * Control Using Telnet, Putty, and other Terminals

@@ -1,0 +1,467 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using the Robots &mdash; Fingerprint Scanner Robot 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Fingerprint Scanner Robot 1.1 documentation" href="index.html"/>
+        <link rel="prev" title="Program Development" href="ProgramDevelopment.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Fingerprint Scanner Robot
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NARFSTR.html">NARFSTR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#design">Design</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#structure">Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#fingerprint-assembly">Fingerprint Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#electronics-box">Electronics Box</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#construction">Construction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#parts">Parts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#d-printed-parts">3D Printed Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#electronic-parts">Electronic Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#screws-and-miscellaneous-parts">Screws and Miscellaneous Parts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#legs-and-actuator-mount-assembly">Legs and Actuator Mount Assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#legs">Legs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#actuator-mounts">Actuator Mounts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#connecting-the-legs-and-actuator-mounts">Connecting the Legs and Actuator Mounts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#rubber-feet">Rubber Feet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#id1">Fingerprint Assembly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#electronics-box-assembly">Electronics Box Assembly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#electronics">Electronics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#id2">Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#assembly">Assembly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#fingerprints">Fingerprints</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NAFSTR.html">NAFSTR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#design">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#construction">Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#electronics">Electronics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ProgramDevelopment.html">Program Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ProgramDevelopment.html#java-robot-control-program">Java Robot Control Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#back-end">Back End</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#gui">GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ProgramDevelopment.html#c-local-control-program">C++ Local Control Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#development-environment">Development Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#libraries">Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#narfstr">NARFSTR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#nafstr">NAFSTR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProgramDevelopment.html#development-information">Development Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ProgramDevelopment.html#fingerprintrobotcom-library"><code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Using the Robots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#communication-protocol">Communication Protocol</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#protocol">Protocol</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general-information">General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#format">Format</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#narfstr-commands">NARFSTR Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nafstr-commands">NAFSTR Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#narfstr-example">NARFSTR Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nafstr-example">NAFSTR Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#control-with-fingerpintrobotcontrol-java-program">Control with <code class="docutils literal"><span class="pre">FingerpintRobotControl</span></code> Java Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gui-control">GUI Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-control">Command Line Control</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#control-using-telnet-putty-and-other-terminals">Control Using Telnet, Putty, and other Terminals</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Fingerprint Scanner Robot</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Using the Robots</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Use.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="using-the-robots">
+<h1>Using the Robots<a class="headerlink" href="#using-the-robots" title="Permalink to this headline">¶</a></h1>
+<p>The robots are controlled by text commands send to them over either a serial connection, a TCP network connection, or a UDP network connection. These text commands can be sent in many ways. They can be sent through the Java control software, using both the command line interface and the GUI, they can be sent using Telnet or Putty, and they can be sent using serial terminal, such as gtkterm. This guide will explain the command format, and how to send commands using all the different channels.</p>
+<div class="section" id="communication-protocol">
+<h2>Communication Protocol<a class="headerlink" href="#communication-protocol" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="protocol">
+<h3>Protocol<a class="headerlink" href="#protocol" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="general-information">
+<h4>General Information<a class="headerlink" href="#general-information" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>The robot will receive input from a serial stream via USB or over a network connection on port 2424 (the NAFSTR uses port 80 because its software is old) via Ethernet. The format of the requests will be the same in all cases.</li>
+<li>When the robot is connected over the network, it is capable of receiving requests over both a UDP connection and a TCP connection. However, if any request is received over a UDP connection, the response message will be sent over a TCP connection.</li>
+<li>With the exception of UDP messages as mentioned above, the robot will respond to all messages over the channel the message was received on.</li>
+<li>The robot only has a 64 byte serial buffer. Thus, if many commands are sent rapidly over USB, some commands will be lost. However, when connected over Ethernet, the robot has a 16 kibibyte buffer, thus making an overflow less likely.</li>
+</ol>
+</div>
+<div class="section" id="format">
+<h4>Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>Each command has the format <code class="docutils literal"><span class="pre">commandName</span> <span class="pre">arg_0</span> <span class="pre">arg_1</span> <span class="pre">arg_2...</span></code>, where <code class="docutils literal"><span class="pre">arg_n</span></code> is the n<sup>th</sup> argument. If the command has no arguments, then the command is simply the name. Each part of the command is separated from the others with a single space.</li>
+<li>Upon receiving and successfully parsing a command, the robot will send a message of the format <code class="docutils literal"><span class="pre">commandName-received</span></code>. If there is a problem parsing a command, the robot will instead send <code class="docutils literal"><span class="pre">bad-command</span></code>.</li>
+<li>Upon completion of a command, the robot will send a message of the format <code class="docutils literal"><span class="pre">commandName-end</span></code>.</li>
+<li>When sent the string “fingerrobot”, the robot will respond with a string of the format: <code class="docutils literal"><span class="pre">found:robot</span> <span class="pre">type:MAC</span> <span class="pre">Address:</span></code>. For example, a NARFSTR robot with a MAC address of <code class="docutils literal"><span class="pre">ba:db:ad:ba:db:ad</span></code> would respond with <code class="docutils literal"><span class="pre">found:NARFSTR:ba:db:ad:ba:db:ad:</span></code>.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="commands">
+<h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="narfstr-commands">
+<h4>NARFSTR Commands<a class="headerlink" href="#narfstr-commands" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Stroke:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Description:</th><td class="field-body">causes the robot to move the finger through one cycle.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Format:</th><td class="field-body"><code class="docutils literal"><span class="pre">stroke</span></code></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Set:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Description:</th><td class="field-body"><p class="first">sets the parameters of the robot&#8217;s following moves.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Format:</th><td class="field-body"><p class="first"><code class="docutils literal"><span class="pre">set</span> <span class="pre">forwardSpeed</span> <span class="pre">buttonWaitTime</span> <span class="pre">reverseSpeed</span> <span class="pre">returnWaitTime</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">forwardSpeed</span></code>:</th><td class="field-body">the motor&#8217;s speed when driving the finger away from the starting position. Between 0 and 255, inclusive.</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal"><span class="pre">buttonWaitTime</span></code>:</th><td class="field-body">the amount of time, in ms, the robot should wait once the finger hits the limit switch.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">reverseSpeed</span></code>:</th><td class="field-body">the motor&#8217;s speed when driving the finger back to the starting position. Between 0 and 255, inclusive.</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal"><span class="pre">returnWaitTime</span></code>:</th><td class="field-body">the amount of time to wait, in ms, once the finger has returned to its original position.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Reset:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Description:</th><td class="field-body"><p class="first">causes the robot the drive the finger towards the starting position.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Format:</th><td class="field-body"><p class="first"><code class="docutils literal"><span class="pre">reset</span> <span class="pre">time</span> <span class="pre">speed</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">time</span></code>:</th><td class="field-body">the amount of time the finger will be in motion, in ms.</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal"><span class="pre">speed</span></code>:</th><td class="field-body">the motor&#8217;s speed, between 0 and 255 inclusive.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nafstr-commands">
+<h4>NAFSTR Commands<a class="headerlink" href="#nafstr-commands" title="Permalink to this headline">¶</a></h4>
+<p>See <code class="docutils literal"><span class="pre">DocumentationOld/Arduino</span> <span class="pre">-</span> <span class="pre">Computer</span> <span class="pre">Communication</span> <span class="pre">Protocol.docx</span></code> or <code class="docutils literal"><span class="pre">DocumentationOld/Arduino</span> <span class="pre">-</span> <span class="pre">Computer</span> <span class="pre">Communication</span> <span class="pre">Protocol.txt</span></code> for details.</p>
+</div>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<p>The following are examples of what an exchange with the robot would look like.</p>
+<div class="section" id="narfstr-example">
+<h4>NARFSTR Example<a class="headerlink" href="#narfstr-example" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python"><div class="highlight"><pre>fingerrobot
+found:NARFSTR:90:a2:da:0f:95:39:
+set 120 2000 120 2000
+set-received
+set-end
+stroke
+stroke-received
+stroke-end
+reset 1000 255
+reset-received
+reset-end
+notacommand
+bad-command
+</pre></div>
+</div>
+</div>
+<div class="section" id="nafstr-example">
+<h4>NAFSTR Example<a class="headerlink" href="#nafstr-example" title="Permalink to this headline">¶</a></h4>
+<p>Please put one here!</p>
+</div>
+</div>
+</div>
+<div class="section" id="control-with-fingerpintrobotcontrol-java-program">
+<h2>Control with <code class="docutils literal"><span class="pre">FingerpintRobotControl</span></code> Java Program<a class="headerlink" href="#control-with-fingerpintrobotcontrol-java-program" title="Permalink to this headline">¶</a></h2>
+<p>The program can be found in <code class="docutils literal"><span class="pre">Code/FingerprintRobotControl/FingerprintRobotControl-v1.1.jar</span></code> and allows for both GUI and command line operation. The following two sections describe both methods.</p>
+<p><strong>Note:</strong> the NAFSTR uses an older version of the software, found in <code class="docutils literal"><span class="pre">Code/FingerprintRobotControl/FingerprintRobotControl-v1.0.jar</span></code>. Most, but not all, of the instructions below apply to the older version.</p>
+<div class="section" id="gui-control">
+<h3>GUI Control<a class="headerlink" href="#gui-control" title="Permalink to this headline">¶</a></h3>
+<p>To launch the program in GUI mode, simply run the program. Or, launch the program from the command line with no arguments: <code class="docutils literal"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">FingerprintRobotControl-v1.1.jar</span></code>. Once the program opens, you should see a window like the one below.</p>
+<img alt="_images/JavaProgramEmpty.PNG" src="_images/JavaProgramEmpty.PNG" />
+<p>This is the starting screen. To use the program, first search for robots by clicking the &#8220;Search&#8221; button. After about three seconds, the combo box will be populated with the types, locations, and MAC addresses of all the robots the program found. To connect to a robot, select one from the list and press connect. If the connection was successful, the status field to the left of the combo box should say &#8220;Connected&#8221;.</p>
+<p>Now, you can begin to write the commands you want the robot to execute. There are two ways to do this: (1) using the graphical configurator, which requires no knowledge of the communication protocol or, (2), using the text configurator, which allows you to simply type the commands you wish to send to the robot. To use the graphical configurator, press the button on the bottom of the screen with the name of the command you wish to add. A command should show up on the screen. Now, type in the specified values. A complete graphical program looks like the one below.</p>
+<img alt="_images/JavaProgramGraphicalConfigurator.PNG" src="_images/JavaProgramGraphicalConfigurator.PNG" />
+<p>To use the text configurator, select the tab labeled &#8220;Text Configurator&#8221;. If you have a program currently open if the graphical configurator, it will automatically be converted to text and displayed in the text configurator. This is a good way to learn the text format of the commands. Once you are in the text configurator, simply type commands. A program written with the text configurator is shown below:</p>
+<img alt="_images/JavaProgramTextConfigurator.PNG" src="_images/JavaProgramTextConfigurator.PNG" />
+<p>Once you are done with you program, you can save it by going to &#8220;File&#8221; menu and clicking &#8220;Save&#8221;. This will bring up a dialog asking you where you would like to save your file. The saved files are plain text files, with the same content that appears in the text configurator. To open a file, choose &#8220;Open&#8221; from the &#8220;File&#8221; menu. When you open a file, there will be radio buttons on the right side of the open dialog to allow you to choose the type of robot the opened file is for. (Currently, there is only one button for the NARFSTR. Support will be added for the NAFSTR in the future.) The picture below shows the open dialog.</p>
+<img alt="_images/JavaProgramOpenWindow.PNG" src="_images/JavaProgramOpenWindow.PNG" />
+<p>To execute your programs, hit the &#8220;Execute&#8221; button. This will send the commands to the robot. You can see the progress in the progress bar. If you want to stop execution, hit the &#8220;Stop&#8221; button. This will stop execution after the currently running move is complete. There is no way to stop execution in the middle of a move. If you click the stop button, and the program still says &#8220;Stopping&#8221; under the progress bar even though the robot has stopped, you may need to click the &#8220;Force Stop&#8221; button. This will immediately disconnect the robot.</p>
+</div>
+<div class="section" id="command-line-control">
+<h3>Command Line Control<a class="headerlink" href="#command-line-control" title="Permalink to this headline">¶</a></h3>
+<p>To run the program from the command line, use the following command:</p>
+<p><code class="docutils literal"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">FingerprintRobotControl-v1.1.jar</span> <span class="pre">robotType</span> <span class="pre">fileName</span> <span class="pre">connectionMode</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">robotType</span></code>:</th><td class="field-body"><p class="first">the type of robot to control, either NAFSTR or NARFSTR. (Currently only NARFSTR is supported.)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal"><span class="pre">fileName</span></code>:</th><td class="field-body"><p class="first">an absolute or relative path to a file containing the commands to execute, 1 command per line.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">connectionMode</span></code>:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal"><span class="pre">ethernet</span></code>:</th><td class="field-body">searches for robots on the network and connects to the first one found.</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal"><span class="pre">usb</span></code>:</th><td class="field-body">searches for robots connected over USB and connects to the first one found.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">IP address:</th><td class="field-body">the IP address of the robot to connect to.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Serial port:</th><td class="field-body">the name of a serial port the robot is plugged into.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="control-using-telnet-putty-and-other-terminals">
+<h2>Control Using Telnet, Putty, and other Terminals<a class="headerlink" href="#control-using-telnet-putty-and-other-terminals" title="Permalink to this headline">¶</a></h2>
+<p>The robot can easily be controlled using any terminal. With telnet, simply type <code class="docutils literal"><span class="pre">telnet</span> <span class="pre">ipAddress</span> <span class="pre">2424</span></code>, where <code class="docutils literal"><span class="pre">ipAddress</span></code> is the IP address of your robot. With Putty, enter the IP address of your robot and the port 2424. Then, select telnet for the protocol and hit connect. For gtkterm, launch the terminal and select the right serial port. Once you have connected your terminal, just type commands, 1 per line, and the robot should execute them.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="ProgramDevelopment.html" class="btn btn-neutral" title="Program Development" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Jacob Glueck.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

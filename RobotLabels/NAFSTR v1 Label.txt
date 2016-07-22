@@ -1,0 +1,3 @@
+NAFSTR
+Networked Automated Fingerprint Scanner Test Robot
+Model #: 92630001.001

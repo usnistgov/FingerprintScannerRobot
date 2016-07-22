@@ -1,0 +1,56 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}NARFSTR}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Design}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Structure}{3}{subsection.2.1.1}
+\contentsline {subsubsection}{Fingerprint Assembly}{3}{subsubsection*.3}
+\contentsline {subsubsection}{Electronics Box}{4}{subsubsection*.4}
+\contentsline {section}{\numberline {2.2}Construction}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Parts}{5}{subsection.2.2.1}
+\contentsline {subsubsection}{3D Printed Parts}{5}{subsubsection*.5}
+\contentsline {subsubsection}{Electronic Parts}{6}{subsubsection*.6}
+\contentsline {subsubsection}{Screws and Miscellaneous Parts}{7}{subsubsection*.7}
+\contentsline {subsection}{\numberline {2.2.2}Legs and Actuator Mount Assembly}{8}{subsection.2.2.2}
+\contentsline {subsubsection}{Legs}{8}{subsubsection*.8}
+\contentsline {subsubsection}{Actuator Mounts}{9}{subsubsection*.9}
+\contentsline {paragraph}{Motor End Actuator Mount}{9}{paragraph*.10}
+\contentsline {paragraph}{Finger End Actuator Mount}{10}{paragraph*.11}
+\contentsline {subsubsection}{Connecting the Legs and Actuator Mounts}{12}{subsubsection*.12}
+\contentsline {subsubsection}{Rubber Feet}{13}{subsubsection*.13}
+\contentsline {subsection}{\numberline {2.2.3}Fingerprint Assembly}{13}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Electronics Box Assembly}{14}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Electronics}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Design}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Assembly}{19}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Fingerprints}{19}{section.2.4}
+\contentsline {chapter}{\numberline {3}NAFSTR}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Design}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Construction}{23}{section.3.2}
+\contentsline {section}{\numberline {3.3}Electronics}{24}{section.3.3}
+\contentsline {chapter}{\numberline {4}Program Development}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Java Robot Control Program}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Back End}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}GUI}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Command Line}{26}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}C++ Local Control Program}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Development Environment}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Libraries}{26}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}NARFSTR}{27}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}NAFSTR}{27}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Development Information}{27}{subsection.4.2.5}
+\contentsline {subsubsection}{\texttt {FingerprintRobotCom} Library}{27}{subsubsection*.14}
+\contentsline {chapter}{\numberline {5}Using the Robots}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Communication Protocol}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Protocol}{29}{subsection.5.1.1}
+\contentsline {subsubsection}{General Information}{29}{subsubsection*.15}
+\contentsline {subsubsection}{Format}{29}{subsubsection*.16}
+\contentsline {subsection}{\numberline {5.1.2}Commands}{30}{subsection.5.1.2}
+\contentsline {subsubsection}{NARFSTR Commands}{30}{subsubsection*.17}
+\contentsline {subsubsection}{NAFSTR Commands}{30}{subsubsection*.18}
+\contentsline {subsection}{\numberline {5.1.3}Examples}{30}{subsection.5.1.3}
+\contentsline {subsubsection}{NARFSTR Example}{31}{subsubsection*.19}
+\contentsline {subsubsection}{NAFSTR Example}{31}{subsubsection*.20}
+\contentsline {section}{\numberline {5.2}Control with \texttt {FingerpintRobotControl} Java Program}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}GUI Control}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Command Line Control}{35}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Control Using Telnet, Putty, and other Terminals}{36}{section.5.3}

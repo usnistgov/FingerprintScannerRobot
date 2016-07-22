@@ -1,0 +1,4 @@
+The fingerprint files generated from PNG files with roll.scad are named using the following format:
+[PNG file name]S[scale factor]X[fingerprint X dimension (mm)]Y[fingerprint y dimension (mm)]R[ridge height (mm)]
+
+A suffix of BF means it has tabs that extend out on the side. A suffix of LF means it has tabs that are the proper size to allow it to fit into the NARFSTR. No suffix means it has tabs, but they are right next to the fingerprint.

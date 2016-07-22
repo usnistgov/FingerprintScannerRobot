@@ -1,0 +1,22 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh filename="../../../AppData/Local/Temp/Temp2_nbis_v4_2_0.zip/Rel_4.2.0/misc/nistmeshlab/util/example/nistFinger.xyz" label="nistFinger.xyz">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+  <MLMesh filename="nistFinger.stl" label="Poisson mesh">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>

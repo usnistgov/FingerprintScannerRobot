@@ -1,0 +1,110 @@
+
+NAFSTR
+******
+
+**Note:** The documentation below is sparse and needs to be improved.
+Have fun!
+
+
+Design
+======
+
+Here is an image showing the main parts of the robot:
+
+[image]
+
+Here is an exploded view of the robot, which is helpful for assembly:
+
+[image]
+
+Here is an image showing how the finger attaches to the servo and how
+the fingerprint attaches to the finger:
+
+[image]
+
+Here is an image showing how the robot rests on the fingerprint
+scanner:
+
+[image]
+
+Here is a final image showing how the electronics housing is
+assembled:
+
+[image]
+
+
+Construction
+============
+
+To construct the robot, first print appropriate quantities of the
+parts in "Final STL Files/NAFSTR". Then, attach all the parts together
+and insert all the electronics. Here is a parts list of all the
+required parts that are not 3D printed:
+
+
+Parts of NAFSTR
+^^^^^^^^^^^^^^^
+
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Part Name                                | URL                                      | Quant  | Price  | Total  |
+|                                          |                                          | ity    |        | Price  |
++==========================================+==========================================+========+========+========+
+| Photoresistor GL5537 5537                | http://www.amazon.com/gp/product/B008QV  | 4      | 0.2475 | 0.99   |
+|                                          | E9BG/ref=ox_sc_act_title_1?ie=           |        |        |        |
+|                                          | UTF8&psc=1&smid=A39BKDU4I2L317           |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 1/2" Circular Force Sensing Resistor     | http://www.jameco.com/webapp/wcs/stores  | 4      | 7.95   | 31.8   |
+|                                          | /servlet/Product_10001_10001_2 128260_-1 |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Hitech HS645MG Servo Motor               | http://www.amazon.com/Hitec-32645S-HS-   | 4      | 49.99  | 199.96 |
+|                                          | 645MG-Torque-Metal/dp/B003T6RSVQ         |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Arduino Uno                              | https://www.sparkfun.com/products/11021  | 1      | 24.95  | 24.95  |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Arduino Ethernet Shield                  | https://www.sparkfun.com/products/9026   | 1      | 45.95  | 45.95  |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Rocker Switch On Off Single Pole Single  | http://www.jameco.com/webapp/wcs/stores  | 1      | 1.65   | 1.65   |
+| Throw Quick Connect Rocker 10 Amp 250    | /servlet/Product_10001_10001_3 16128_-1  |        |        |        |
+| Volt AC Straight                         |                                          |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| DC Power Pigtail Female Plug             | http://www.monoprice.com/Product?seq=1&  | 1      | 0.48   | 0.48   |
+|                                          | format=2&p_id=6881&CAWELAID=13 29453851  |        |        |        |
+|                                          | &CAGPSPN=pla&gclid=CjwKEAjw9eyeBRCqxc_b- |        |        |        |
+|                                          | LD8kTESJADsBMxSlZYFRPGB2LwI09oGs0PsjcrU  |        |        |        |
+|                                          | S6Nd1nQFYJR-kuWp-BoCAAjw_wcB             |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 5V 3A UBEC                               | http://www.adafruit.com/products/1385    | 5      | 9.95   | 49.75  |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Multiplexer CD74HC4067E                  | http://www.digikey.com/product- detail/  | 1      | 2.33   | 2.33   |
+|                                          | en/CD74HC4067E/296-33087-5-ND/1507234    |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 1 kΩ Resistor                            | http://www.jameco.com/webapp/wcs/stores  | 15     | 0.099  | 1.485  |
+|                                          | /servlet/Product_10001_10001_6 90865_-1  |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Jumper Wires                             |                                          | 100    |        | 0      |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Solid Core Wire (22 Gauge)               |                                          |        |        | 0      |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Mini Breadboard                          | https://www.sparkfun.com/products/12043  | 2      | 3.95   | 7.9    |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Half Breadboard                          | https://www.sparkfun.com/products/12002  | 1      | 4.95   | 4.95   |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 10 μF Capacitor                          | https://www.sparkfun.com/products/523    | 1      | 0.45   | 0.45   |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 10x Single Row Male and Female 40 Pin    | http://www.amazon.com/Single-Female-     | 1      | 5.24   | 5.24   |
+| Header Strip 2.54mm / Square Pin Type,   | Header-2-54mm- Components/dp/B008QUVM4E  |        |        |        |
+| Single Row Pin Header Strips, Great      |                                          |        |        |        |
+| Components for PCB                       |                                          |        |        |        |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| 12V 5A Switching Power Supply            | https://www.adafruit.com/products/352    | 1      | 24.95  | 24.95  |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+| Total:                                   |                                          |        |        | 402.8  |
+|                                          |                                          |        |        | 35     |
++------------------------------------------+------------------------------------------+--------+--------+--------+
+
+
+Electronics
+===========
+
+To assemble to electronics, look at the Fritzing file located at:
+"Circuit/NAFSTRCircuit.fzz".

@@ -1,0 +1,6 @@
+[submodule "Code/FingerprintRobotLocalControl/lib/RGBConverter"]
+	path = Code/FingerprintRobotLocalControl/lib/RGBConverter
+	url = https://github.com/ratkins/RGBConverter.git
+[submodule "Code/FingerprintRobotLocalControl/lib/Arduino-RGB-Tools"]
+	path = Code/FingerprintRobotLocalControl/lib/Arduino-RGB-Tools
+	url = https://github.com/joushx/Arduino-RGB-Tools.git

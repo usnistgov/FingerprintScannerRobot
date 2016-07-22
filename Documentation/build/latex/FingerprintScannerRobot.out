@@ -1,0 +1,17 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{NARFSTR}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Design}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Construction}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Electronics}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Fingerprints}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{NAFSTR}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Design}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Construction}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Electronics}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{Program Development}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Java Robot Control Program}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{C++ Local Control Program}{chapter.4}% 13
+\BOOKMARK [0][-]{chapter.5}{Using the Robots}{}% 14
+\BOOKMARK [1][-]{section.5.1}{Communication Protocol}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.2}{Control with FingerpintRobotControl Java Program}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.3}{Control Using Telnet, Putty, and other Terminals}{chapter.5}% 17

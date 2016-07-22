@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Development &mdash; Fingerprint Scanner Robot 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Fingerprint Scanner Robot 1.1 documentation" href="index.html"/>
+        <link rel="next" title="Using the Robots" href="Use.html"/>
+        <link rel="prev" title="NAFSTR" href="NAFSTR.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Fingerprint Scanner Robot
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NARFSTR.html">NARFSTR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#design">Design</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#structure">Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#fingerprint-assembly">Fingerprint Assembly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#electronics-box">Electronics Box</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#construction">Construction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#parts">Parts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#d-printed-parts">3D Printed Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#electronic-parts">Electronic Parts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#screws-and-miscellaneous-parts">Screws and Miscellaneous Parts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#legs-and-actuator-mount-assembly">Legs and Actuator Mount Assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#legs">Legs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#actuator-mounts">Actuator Mounts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#connecting-the-legs-and-actuator-mounts">Connecting the Legs and Actuator Mounts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NARFSTR.html#rubber-feet">Rubber Feet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#id1">Fingerprint Assembly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#electronics-box-assembly">Electronics Box Assembly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#electronics">Electronics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#id2">Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NARFSTR.html#assembly">Assembly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="NARFSTR.html#fingerprints">Fingerprints</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NAFSTR.html">NAFSTR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#design">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#construction">Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NAFSTR.html#electronics">Electronics</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Program Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#java-robot-control-program">Java Robot Control Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#back-end">Back End</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gui">GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#c-local-control-program">C++ Local Control Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment">Development Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libraries">Libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#narfstr">NARFSTR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nafstr">NAFSTR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-information">Development Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fingerprintrobotcom-library"><code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Use.html">Using the Robots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Use.html#communication-protocol">Communication Protocol</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Use.html#protocol">Protocol</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#general-information">General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#format">Format</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Use.html#commands">Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#narfstr-commands">NARFSTR Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#nafstr-commands">NAFSTR Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Use.html#examples">Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#narfstr-example">NARFSTR Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Use.html#nafstr-example">NAFSTR Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Use.html#control-with-fingerpintrobotcontrol-java-program">Control with <code class="docutils literal"><span class="pre">FingerpintRobotControl</span></code> Java Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Use.html#gui-control">GUI Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Use.html#command-line-control">Command Line Control</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Use.html#control-using-telnet-putty-and-other-terminals">Control Using Telnet, Putty, and other Terminals</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Fingerprint Scanner Robot</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Program Development</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ProgramDevelopment.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="program-development">
+<h1>Program Development<a class="headerlink" href="#program-development" title="Permalink to this headline">¶</a></h1>
+<p>There are two programs associated with each robot: (1) a Java program that runs on a computer and controls the robot and (2) a C++ program that runs on the robot. The Java program works with both a Graphical User Interface (GUI) and the command line. With the GUI, the user specifies the actions for the robot to execute, and then connects to the robot and executes the actions. With the command line, the user can supply a text file of commands for the robot to execute, and the program will send the commands to the robot. The C++ program on the robot receives all the commands and executes them. It also responds to any button presses.</p>
+<div class="section" id="java-robot-control-program">
+<h2>Java Robot Control Program<a class="headerlink" href="#java-robot-control-program" title="Permalink to this headline">¶</a></h2>
+<p>The Java program has 3 main parts:</p>
+<ol class="arabic simple">
+<li>The back end, which handles all communication with the robot.</li>
+<li>The GUI, which provides a simple way to control the robot.</li>
+<li>The command line interface, which lets the user send a list of commands to the robot.</li>
+</ol>
+<p>This guide will explain each of the three parts.</p>
+<div class="section" id="back-end">
+<h3>Back End<a class="headerlink" href="#back-end" title="Permalink to this headline">¶</a></h3>
+<p>The back end consists of the robot package, which contains four main classes:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">Robot</span></code></li>
+<li><code class="docutils literal"><span class="pre">RobotCom</span></code></li>
+<li><code class="docutils literal"><span class="pre">RobotInfo</span></code></li>
+<li><code class="docutils literal"><span class="pre">Command</span></code></li>
+</ol>
+<p><code class="docutils literal"><span class="pre">Robot</span></code> is an abstract class, and it represents any type of robot, either a NAFSTR or a NARFSTR. It currently has one subclass, <code class="docutils literal"><span class="pre">NARFSTR</span></code>. The current version of the program does not support the NAFSTR robot; to control a NAFSTR, the older version must be used. <code class="docutils literal"><span class="pre">NARFSTR</span></code> has one constructor, which takes a <code class="docutils literal"><span class="pre">RobotCom</span></code> object. A <code class="docutils literal"><span class="pre">RobotCom</span></code> is a channel for communicating with the robot, and has methods for reading and writing data. <code class="docutils literal"><span class="pre">RobotCom</span></code> has two subclasses: <code class="docutils literal"><span class="pre">SerialRobotCom</span></code>, which represents a connection to a robot over a serial port (USB), and <code class="docutils literal"><span class="pre">NetworkRobotCom</span></code>, which represents a connection to a robot over a network. In order to make an instance of either class, a <code class="docutils literal"><span class="pre">RobotInfo</span></code> object is required. A <code class="docutils literal"><span class="pre">RobotInfo</span></code> object describes the type of robot, the location of the robot (an IP address and a serial port), and the robot&#8217;s MAC address, which is used as an ID.</p>
+<p>In order to easily find robots, the <code class="docutils literal"><span class="pre">Robot</span></code> class provides three static methods:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">findSerialRobots()</span></code>: finds all the robots connected over USB by checking every USB port.</li>
+<li><code class="docutils literal"><span class="pre">findNetworkedRobots()</span></code>: finds all the robots connected over the network by sending out a UDP broadcast and listening for responses.</li>
+<li><code class="docutils literal"><span class="pre">findRobots()</span></code>: finds all the robots over both USB and the network.</li>
+</ol>
+<p>In order to execute commands on a robot, the <code class="docutils literal"><span class="pre">Robot</span></code> class provides an <code class="docutils literal"><span class="pre">executeCommand(Command</span> <span class="pre">c)</span></code> method, and an <code class="docutils literal"><span class="pre">executeCommands(List&lt;Command&gt;</span> <span class="pre">commands)</span></code> method. Both methods send commands to the robot, and wait for execution to finish. A <code class="docutils literal"><span class="pre">Command</span></code> object consists of two components: a String representing the command name, and a list of Objects representing the parameters.</p>
+<p>For more documentation, see the Javadoc, in <code class="docutils literal"><span class="pre">Code/FingerprintRobotControl/doc</span></code>.</p>
+</div>
+<div class="section" id="gui">
+<h3>GUI<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h3>
+<p>The code for the GUI is in three packages: <code class="docutils literal"><span class="pre">view</span></code>, <code class="docutils literal"><span class="pre">view.configurator</span></code>, and <code class="docutils literal"><span class="pre">view.robotpanel</span></code>. The program&#8217;s GUI is an instance of <code class="docutils literal"><span class="pre">view.RobotController</span></code>. The <code class="docutils literal"><span class="pre">RobotController</span></code> class has two main components: a <code class="docutils literal"><span class="pre">view.robotpanel.RobotConnectionPanel</span></code>, which manages the connection with the robot, and a <code class="docutils literal"><span class="pre">view.robotpanel.CommandEditorPanel</span></code>, which allows the user to edit the commands being sent to the robot.</p>
+</div>
+<div class="section" id="command-line">
+<h3>Command Line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h3>
+<p>The code for the command line interface is in <code class="docutils literal"><span class="pre">main.FingerprintRobotControl</span></code>. When <code class="docutils literal"><span class="pre">FingerprintRobotControl</span></code> is executed with no arguments, it automatically creates an instance of <code class="docutils literal"><span class="pre">view.RobotController</span></code>, creating the GUI. If there are arguments, it attempts to use them. The argument format is: <code class="docutils literal"><span class="pre">&lt;robot</span> <span class="pre">type&gt;</span> <span class="pre">&lt;file</span> <span class="pre">name&gt;</span> <span class="pre">&lt;connection</span> <span class="pre">location&gt;</span></code>. The robot type should be either NAFSTR of NARFSTR. (NAFSTR is not currently supported, but will be soon.) The file name should be an absolute or relative path to the file of commands which the program is to execute. The file format is a text file with one command per line. Finally, the connection location could be one of four things: &#8220;ethernet&#8221;, &#8220;usb&#8221;, an IP address, or a serial port. If it is &#8220;ethernet&#8221; or &#8220;usb&#8221;, to program will search for robots connected over the specified channel, and pick the first one.</p>
+</div>
+</div>
+<div class="section" id="c-local-control-program">
+<h2>C++ Local Control Program<a class="headerlink" href="#c-local-control-program" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="development-environment">
+<h3>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h3>
+<p>The program was developed in Eclipse using the the Arduino Eclipse Extensions version 2.4.201506210212 by Jan Baeyens (<a class="reference external" href="http://www.baeyens.it/eclipse/">http://www.baeyens.it/eclipse/</a>), with the Arduino libraries version 1.6.5. The Robot&#8217;s program consists of two parts: C++ libraries which are common to both robots (the libraries are currently only used with the NARFSTR, but should be used on the NAFSTR), and a <code class="docutils literal"><span class="pre">.ino</span></code> file which contains the main program for the robot. The <code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> library is stored in <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/lib</span></code>. In order to make the Arduino plugin include this library (and other libraries which are stored in the lib folder) in the build path, the &#8220;Private Library Path&#8221; in the Arduino Plugin Preferences must be set to <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/lib</span></code>.</p>
+</div>
+<div class="section" id="libraries">
+<h3>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h3>
+<p>The code needs several libraries in order to compile. First, it needs the <code class="docutils literal"><span class="pre">FingperintRobotCom</span></code> library, which handles communication between the robot and the computer. Second, it needs the <code class="docutils literal"><span class="pre">EthernetNonBlocking</span></code> library, which is a modified version of the standard Arduino Ethernet Library. I modified the standard library to make the DHCP functions non-blocking. This significantly improves responsiveness; with the standard blocking DHCP functions, the robot would freeze for 60 seconds if no Ethernet cable was plugged in. Both programs also need the following standard Arduino libraries:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">EEPROM</span></code></li>
+<li><code class="docutils literal"><span class="pre">SPI</span></code></li>
+</ol>
+<p>Each of the NAFSTR and NARFSTR programs also require some specific libraries:</p>
+<p>NAFSTR</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">Servo</span></code>: standard Arduino library.</li>
+</ol>
+</div></blockquote>
+<p>NARFSTR</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">Arduino-RGB-Tools</span></code>: an open-source library for controlling RGB LEDs. It is on github (<a class="reference external" href="https://github.com/joushx/Arduino-RGB-Tools">https://github.com/joushx/Arduino-RGB-Tools</a>), stored in the git repository as a submodule, and licensed under The MIT License (MIT).</li>
+<li><code class="docutils literal"><span class="pre">RGBConverter</span></code>:  an open-source library for converting between RGB and HSV. It is on github (<a class="reference external" href="https://github.com/ratkins/RGBConverter">https://github.com/ratkins/RGBConverter</a>), stored in the git repository as a submodule, and its license says that you can do whatever you want with it.</li>
+<li><code class="docutils literal"><span class="pre">VNH5019Driver</span></code>: a library I wrote for controlling the VNH5019 driver chip.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="narfstr">
+<h3>NARFSTR<a class="headerlink" href="#narfstr" title="Permalink to this headline">¶</a></h3>
+<p>The NARFSTR control program is located at <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/NARFSTRLocalControl</span></code>. Its main file is <code class="docutils literal"><span class="pre">NARFSTRLocalControl.ino</span></code>.</p>
+</div>
+<div class="section" id="nafstr">
+<h3>NAFSTR<a class="headerlink" href="#nafstr" title="Permalink to this headline">¶</a></h3>
+<p>The NAFSTR control program is located at <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/NAFSTRLocalControl</span></code>. Its main file is <code class="docutils literal"><span class="pre">NAFSTRLocalControl.ino</span></code>. The NAFSTR program is old, and so does not use either the <code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> library or the <code class="docutils literal"><span class="pre">EthernetNonBlocking</span></code> library.</p>
+</div>
+<div class="section" id="development-information">
+<h3>Development Information<a class="headerlink" href="#development-information" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">FingerpintRobotCom</span></code> library attempts to read a MAC address from the Arduino&#8217;s EEPROM on startup. If no MAC address is found, it will not work. In order to load a MAC address into EEPROM for the first time, use the <code class="docutils literal"><span class="pre">MACUploader</span></code> program located at <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/MACUploader</span></code>.</p>
+<div class="section" id="fingerprintrobotcom-library">
+<h4><code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> Library<a class="headerlink" href="#fingerprintrobotcom-library" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal"><span class="pre">FingerprintRobotCom</span></code> library header file (located at <code class="docutils literal"><span class="pre">Code/FingerprintRobotLocalControl/lib/FingerprintRobotCom/FingerprintRobotCom.h</span></code>) contains comments which explain all the important functions.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Use.html" class="btn btn-neutral float-right" title="Using the Robots" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="NAFSTR.html" class="btn btn-neutral" title="NAFSTR" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Jacob Glueck.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

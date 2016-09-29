@@ -42,5 +42,5 @@ For a video of the NARFSTR, see: https://youtu.be/WPvg-6ALE24.
 Kevin Mangold (kevin.mangold@nist.gov)
 
 ## Credits:
-Primary Developer: Jacob Glueck
+Primary Developer: Jacob Glueck  
 Support: Kevin Mangold

@@ -39,5 +39,4 @@ For a video of the NARFSTR, see: https://youtu.be/WPvg-6ALE24.
 * Videos: contains videos of the robots.
 
 ## Contact:
-Kevin Mangold
-kevin.mangold@nist.gov
+Kevin Mangold (kevin.mangold@nist.gov)

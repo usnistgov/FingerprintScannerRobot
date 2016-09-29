@@ -53,6 +53,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Fingerprint Scanner Robot'
 copyright = u''
+html_show_copyright = False
 author = u'Jacob Glueck'
 
 # The version info for the project you're documenting, acts as replacement for

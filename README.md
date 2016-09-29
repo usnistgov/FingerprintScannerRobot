@@ -10,6 +10,8 @@ For a video of the NARFSTR, see: https://youtu.be/WPvg-6ALE24.
 
 ## Project Contents:
 
+For more detailed information and usage/installation details, see the Documentation/build artifacts.
+
 * Circuit: contains all the files related to the robots' circuitry.
 * Code: contains all the code
     * CSSharpLibrary: contains a Visual Studio C# solution with the CSharpLibrary for controlling the NAFSTR.

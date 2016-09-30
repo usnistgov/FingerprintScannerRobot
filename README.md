@@ -46,3 +46,6 @@ Kevin Mangold (kevin.mangold@nist.gov)
 ## Credits:
 Primary Developer: Jacob Glueck  
 Support: Kevin Mangold
+
+## Disclaimer:
+See the NIST dislacimer at https://www.nist.gov/disclaimer.
